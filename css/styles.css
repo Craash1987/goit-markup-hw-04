@@ -544,6 +544,8 @@ img {
 
 .social-list-icon,
 .social-list-icon-footer {
+  background-size: contain;
+  background-position: 50% 50%;
   width: 20px;
   height: 20px;
 }
@@ -554,7 +556,7 @@ img {
 
 .social-list-link,
 .social-list-link-footer {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   width: 44px;
