@@ -100,7 +100,7 @@ img {
 }
 
 .logo-link {
-  display: flex;
+  display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
@@ -124,6 +124,7 @@ img {
 .navigation-list-link,
 .contact-link-mail,
 .contact-link-tel {
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 33px;
 }
@@ -145,6 +146,9 @@ img {
 
 .mail-icon,
 .tel-icon {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
   content: "";
   margin-right: 10px;
 }
@@ -328,6 +332,17 @@ img {
   letter-spacing: 0.03em;
 }
 
+.trumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color:#F5F4FA;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
 /*=====advantage icon=====*/
 
 .advantage-list {
@@ -336,28 +351,12 @@ img {
   align-items: center;
 }
 
-.advantage-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  border: 1px solid var(--color-icon-our-klient);
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-color:#F5F4FA;
-}
-
 .advantage-img {
   width: 70px;
   height: 70px;
   display: flex;
   justify-content: center;
   fill: var(--color-icon-our-klient);
-}
-
-.advantage-link {
-
 }
 
 .advantage-link:hover,
@@ -499,19 +498,20 @@ img {
 }
 
 .our-klient-list-link {
-  display: flex;
+  display: inline-flex;
+  background-position: 50% 50%;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid var(--color-icon-our-klient);
   border-radius: 4px;
+  fill: var(--color-icon-our-klient);
 }
 
 .our-klient-img {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  fill: var(--color-icon-our-klient);
 }
 
 .our-klient-list-link:hover .our-klient-img,
@@ -544,24 +544,28 @@ img {
 
 .social-list-icon,
 .social-list-icon-footer {
+  display: inline-flex;
   background-size: contain;
   background-position: 50% 50%;
   width: 20px;
   height: 20px;
 }
 
-.social-list-icon {
-  fill: #AFB1B8;
+.social-list-item,
+.social-list-item-footer {
+  width: 44px;
+  height: 44px;
 }
 
 .social-list-link,
 .social-list-link-footer {
-  display: block;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  fill: #AFB1B8;
 }
 
 .social-list-link:hover .social-list-icon,
@@ -576,9 +580,6 @@ img {
 
 .social-list-link-footer {
   background-color: var(--color-link-icon-footer);
-}
-
-.social-list-icon-footer {
   fill: var(--primary-white-color);
 }
 
@@ -648,6 +649,7 @@ img {
 /*===== social list footer svg=====*/
 .footer-contant{
   display: flex;
+  align-items: baseline;
 }
 
 .footter-address {
@@ -655,7 +657,7 @@ img {
 }
 
 .social-container-footer {
-  padding: 12px 0;
+ display: block;
 }
 
 .social-title-footer {
